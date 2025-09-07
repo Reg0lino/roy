@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Roy Problem - A Case Study</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-grid"></div>
+
+    <div class="container">
+        <header>
+            <h1 class="glitch" data-text="R.O.Y.">R.O.Y.</h1>
+            <nav>
+                <a href="#about">Profile</a>
+                <a href="#skills">"Skills"</a>
+                <a href="#sightings">Sightings</a>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="hero-image-container">
+                    <img src="images/royparody.png" alt="A man named Roy, looking smug." class="hero-image">
+                </div>
+                <div class="hero-text">
+                    <h2 class="glitch" data-text="THE ROY PROBLEM">THE ROY PROBLEM</h2>
+                    <p>A case study in fuckery, questionable life choices, and the art of being a <strong>true cunt</strong>.</p>
+                </div>
+            </section>
+
+            <!-- The Cigarette Incident -->
+            <section id="incident" class="content-section animate-on-scroll">
+                <h3>// Log_00: The Cigarette Incident</h3>
+                <p>Subject is known for habitual resource acquisition, specifically <strong>bumming cigarettes</strong>. Post-consumption, Roy attempts to dispose of the evidence by launching the butt into a neighbor's yard. However, due to a <strong>severe lack of athletic prowess</strong>, the projectile consistently falls short, as does his freckle-dick, landing directly in your yard. This poses a significant hazard to local feline residents who deserve better.</p>
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="content-section animate-on-scroll">
+                <h3>// Log_01: Subject Profile</h3>
+                <p>His life is a masterclass in mediocrity, yet he carries himself with the confidence of a COOL punk SUPERSTAR. This paradox is the core of the Roy Problem. Historical data confirms long-term patterns of erratic behavior, including a documented incident of running <strong>naked through Crystal Beach</strong> during a civic holiday. Subject's primary function appears to be <strong>pissing off his neighbors.</strong>.</p>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills" class="content-section animate-on-scroll">
+                <h3>// Log_02: "Skills"</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">Master of ROYsplaining</div>
+                    <div class="skill-card">Leaving <strong>One Sip</strong> in the Milk Carton</div>
+                    <div class="skill-card">Forgetting Your Name, <strong>Immediately</strong></div>
+                    <div class="skill-card">Expert in Drinking Warm Beer</div>
+                    <div class="skill-card">Stealing <strong> Check Your Pockets</strong></div>
+                </div>
+            </section>
+
+            <!-- Testimonials Section -->
+            <section id="testimonials" class="content-section animate-on-scroll">
+                <h3>// Log_03: Witness Accounts</h3>
+                <div class="testimonial-card">
+                    <blockquote>"He showed up to my party, ate <strong>half the cake</strong> before we cut it, and then tried to sell my cat essential oils."</blockquote>
+                    <cite>- A Disgruntled 'Friend'</cite>
+                </div>
+                <div class="testimonial-card">
+                    <blockquote>"Let's be blunt. He's a <strong>freckle-dicked loser</strong>."</blockquote>
+                    <cite>- Anonymous Field Report</cite>
+                </div>
+            </section>
+            
+            <!-- Roy Sightings Section -->
+            <section id="sightings" class="content-section animate-on-scroll">
+                <h3>// Log_05: ROY SIGHTINGS</h3>
+                <ul class="sightings-list">
+                    <li>Spotted attempting to pay for groceries with <strong>bummed cigarettes</strong>.</li>
+                    <li>Observed attempting to "walk" his neighbor's chihuahua using a <strong>commercial drone</strong> and a length of twine. The operation ended when the drone became entangled in a wind chime. RIP Rover.</li>
+                    <li>Seen on the 8 AM bus listening to a podcast about "disrupting the alpaca wool industry" <strong>on speakerphone</strong>.</li>
+                    <li>Witnessed dancing in his backyard attempting to attract <strong>a Mourning Dove</strong> for mating purposes.</li>
+                </ul>
+                <button id="report-sighting-btn" class="report-btn">[ FILE A NEW REPORT ]</button>
+            </section>
+        </main>
+        
+        <footer>
+            <p>This transmission will self-destruct. Or not. Roy probably broke it.</p>
+            <p>&copy; 2025 Asshole Documentation Project</p>
+        </footer>
+    </div>
+
+    <!-- REPORT MODAL (Initially Hidden) -->
+    <div id="report-modal" class="modal-overlay">
+        <div class="modal-content">
+            <form id="sighting-form">
+                <h3>[ SECURE TRANSMISSION ]</h3>
+                <p>File a new report on subject R.O.Y. All data is final.</p>
+                
+                <label for="severity">Incident Severity:</label>
+                <div class="slider-labels"><span>Mildly Annoying</span><span>Existential Threat</span></div>
+                <input type="range" id="severity" name="severity" min="1" max="100" value="50" class="slider">
+
+                <label for="category">Offense Category:</label>
+                <select id="category" name="category">
+                    <option value="">Select Category...</option>
+                    <option value="snack-crime">Snack-Related Crimes</option>
+                    <option value="unsolicited-coaching">Unsolicited Life Coaching</option>
+                    <option value="public-nuisance">Public Nuisance</option>
+                    <option value="common-sense-crime">Crimes Against Common Sense</option>
+                </select>
+
+                <label for="details">Detailed Report:</label>
+                <textarea id="details" name="details" rows="4" placeholder="Log details here..."></textarea>
+                
+                <button type="submit" id="transmit-btn" class="report-btn">[ TRANSMIT ANOMALY DATA ]</button>
+            </form>
+            
+            <!-- Progress and Error Messages (Hidden by default) -->
+            <div id="progress-container" class="hidden">
+                <div class="progress-bar">
+                    <div class="progress-bar-inner"></div>
+                </div>
+                <p>ENCRYPTING & TRANSMITTING...</p>
+            </div>
+
+            <div id="error-container" class="hidden">
+                <div class="error-message">
+                    <h4>TRANSMISSION FAILED</h4>
+                    <p><strong>ERROR_CODE: 5AB0-7A63</strong></p>
+                    <p>ANALYSIS: System integrity compromised. Subject R.O.Y. has likely <strong>sabotaged the network from the inside</strong>. He's probably using the server room to heat up a Hot Pocket. This is why we can't have nice things.</p>
+                </div>
+                <button id="close-modal-btn" class="report-btn">[ CLOSE ]</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
